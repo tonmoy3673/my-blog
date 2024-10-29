@@ -1,9 +1,10 @@
+import Users from "../Pages/Users";
 
 
 const Home = () => {
     return (
         <div>
-            <h2>This Home Page</h2>
+            <Users/>
         </div>
     );
 };

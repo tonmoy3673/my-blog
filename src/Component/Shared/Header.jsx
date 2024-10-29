@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className="flex justify-between pb-6 lg:pb-16">
             <div>
-               <Link to='/' className="text-2xl font-semibold hover:text-amber-400"> BlogPage</Link>
+               <Link to='/home' className="text-2xl font-semibold hover:text-amber-400"> BlogPage</Link>
             </div>
             <ul>
                 <Link to='/home' className="lg:me-8 me-3 text-base text-blue-500 font-semibold hover:text-amber-400">Home</Link>

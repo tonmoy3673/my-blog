@@ -3,7 +3,7 @@ import User from "./User";
 
 
 const Users = () => {
-    const users = useLoaderData();
+    const users = useLoaderData()
     console.log(users);
     return (
         <div className="py-8 md:py-10 pb-5">

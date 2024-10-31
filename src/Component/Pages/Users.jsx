@@ -21,7 +21,13 @@ const Users = () => {
                 }
             </div>
             <div className="text-center mt-2 lg:mt-4">
-                <button className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md">Show More</button>
+                {
+                    usersLength < users.length ? (
+                        <button onClick={()=>setUserLength(usersLength+4)} className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md">Show More</button>
+                    ) : (
+                        <p>No Data Available</p>
+                    )
+                }
             </div>
         </div>
     );

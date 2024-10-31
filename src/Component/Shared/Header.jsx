@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="flex justify-between pb-6 lg:pb-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between pb-6 lg:pb-16">
             <div>
                <Link to='/home' className="text-2xl font-semibold hover:text-amber-400"> BlogPage</Link>
             </div>

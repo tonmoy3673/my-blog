@@ -20,6 +20,9 @@ const Users = () => {
                     usersView && usersView.slice(0,usersLength).map((user)=><User user={user} key={user.id}></User>)
                 }
             </div>
+            <div className="text-center mt-2 lg:mt-4">
+                <button className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md">Show More</button>
+            </div>
         </div>
     );
 };

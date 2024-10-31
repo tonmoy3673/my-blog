@@ -1,10 +1,17 @@
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import User from "./User";
 
 
 const Users = () => {
-    const users = useLoaderData()
-    console.log(users);
+    const users = useLoaderData();
+    const [usersView,setUsersView]=useState([]);
+    const [usersLength,setUserLength] = useState(4)
+
+    useEffect(()=>{
+        setUsersView(users)
+    },[users])
+    console.log(usersView);
     return (
         <div className="py-8 md:py-10 pb-5">
             <h2 className="text-center text-2xl font-semibold">Users Section</h2>

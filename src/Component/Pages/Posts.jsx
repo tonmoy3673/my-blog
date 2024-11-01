@@ -23,7 +23,15 @@ const Posts =()=>{
                 }
             </div>
             <div className="mt-2 lg:mt-3 text-center">
-                <button  className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Show More</button>
+                {
+                    posts && postLength < viewPosts.length ? (
+                        <button onClick={()=>setPostLength(postLength+4)} className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Show More</button>
+                    )
+                    : 
+                    (
+                        <p className="text-center text-base lg:text-lg">No Data Available</p>
+                    )
+                }
             </div>
         </div>
     )

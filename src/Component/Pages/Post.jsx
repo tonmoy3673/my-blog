@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Post = ({post,handleRemove}) => {
@@ -10,7 +11,8 @@ const Post = ({post,handleRemove}) => {
             <h2>Title : {title}</h2>
 
             <div className="pt-3 flex gap-3 items-center justify-center">
-                <button  className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Details</button>
+                <Link to={`/posts/${id}`}>
+                <button  className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Details</button></Link>
                 <button onClick={()=>handleRemove(id)} className="bg-red-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Remove</button>
             </div>
         </div>

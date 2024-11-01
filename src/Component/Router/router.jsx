@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Home/Home";
 import About from "../Pages/About";
+import PostDetails from "../Pages/PostDetails";
 import Posts from "../Pages/Posts";
 import UserDetails from "../Pages/UserDetails";
 import Users from "../Pages/Users";
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
                 path:'/posts',
                 element:<Posts/>,
                 loader:()=>fetch('https://jsonplaceholder.typicode.com/posts')
+            },
+            {
+                path:'/posts/:id',
+                element:<PostDetails/>,
+                loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
             }
             
         ]

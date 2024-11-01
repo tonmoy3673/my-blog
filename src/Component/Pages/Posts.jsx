@@ -22,6 +22,9 @@ const Posts =()=>{
                 viewPosts && viewPosts.slice(0,postLength).map((post)=><Post post={post} key={post.id}/>)
                 }
             </div>
+            <div className="mt-2 lg:mt-3 text-center">
+                <button  className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Show More</button>
+            </div>
         </div>
     )
 };

@@ -9,8 +9,9 @@ const Post = ({post}) => {
             <h2>userID : {userId}</h2>
             <h2>Title : {title}</h2>
 
-            <div>
-                Details
+            <div className="pt-3 flex gap-3 items-center justify-center">
+                <button  className="bg-blue-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Details</button>
+                <button  className="bg-red-500 hover:bg-amber-400 p-2 text-sm rounded-md text-white hover:text-black">Remove</button>
             </div>
         </div>
     );

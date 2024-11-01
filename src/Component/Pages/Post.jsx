@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Post = ({post,handleRemove}) => {
-    const {body,id,title,userId}=post;
+    const {id,title,userId}=post;
    
     return (
         <div className="">
